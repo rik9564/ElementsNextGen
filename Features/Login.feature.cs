@@ -106,6 +106,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
  testRunner.When("I Select [RAMX] from App switch Over", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+#line 7
+ testRunner.When("I Select [EAM] from App switch Over", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

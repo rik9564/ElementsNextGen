@@ -4,3 +4,4 @@ first Ever Page to successfully run in this framework ........
 Scenario: login_to_TMS
 	Given I am Logged in to TMS
 	When I Select [RAMX] from App switch Over
+	When I Select [EAM] from App switch Over
