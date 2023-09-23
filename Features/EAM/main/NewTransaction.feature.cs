@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace ElementsNextGen.Features
+namespace ElementsNextGen.Features.EAM.Main
 {
     using TechTalk.SpecFlow;
     using System;
@@ -19,7 +19,7 @@ namespace ElementsNextGen.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class LoginFeature : object, Xunit.IClassFixture<LoginFeature.FixtureData>, System.IDisposable
+    public partial class NewTransactionFeature : object, Xunit.IClassFixture<NewTransactionFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -28,10 +28,10 @@ namespace ElementsNextGen.Features
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "login.feature"
+#line 1 "NewTransaction.feature"
 #line hidden
         
-        public LoginFeature(LoginFeature.FixtureData fixtureData, ElementsNextGen_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public NewTransactionFeature(NewTransactionFeature.FixtureData fixtureData, ElementsNextGen_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -40,7 +40,7 @@ namespace ElementsNextGen.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "login", "first Ever Page to successfully run in this framework ........", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/EAM/Main", "NewTransaction", "A short summary of the feature", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -80,17 +80,17 @@ namespace ElementsNextGen.Features
             this.TestTearDown();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="login_to_TMS")]
-        [Xunit.TraitAttribute("FeatureTitle", "login")]
-        [Xunit.TraitAttribute("Description", "login_to_TMS")]
-        [Xunit.TraitAttribute("Category", "mytag")]
-        public void Login_To_TMS()
+        [Xunit.SkippableFactAttribute(DisplayName="Create_a_New_Transaction")]
+        [Xunit.TraitAttribute("FeatureTitle", "NewTransaction")]
+        [Xunit.TraitAttribute("Description", "Create_a_New_Transaction")]
+        [Xunit.TraitAttribute("Category", "NewTransaction_1")]
+        public void Create_A_New_Transaction()
         {
             string[] tagsOfScenario = new string[] {
-                    "mytag"};
+                    "NewTransaction_1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login_to_TMS", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 4
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create_a_New_Transaction", null, tagsOfScenario, argumentsOfScenario, featureTags);
+#line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -100,13 +100,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 5
+#line 7
  testRunner.Given("I am Logged in to TMS", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 6
+#line 8
  testRunner.When("I Select Application EAM from App switch Over", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 7
+#line 9
  testRunner.When("I Navigated to EAM Main New Transaction -> New Transaction Menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
@@ -120,12 +120,12 @@ this.ScenarioInitialize(scenarioInfo);
             
             public FixtureData()
             {
-                LoginFeature.FeatureSetup();
+                NewTransactionFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                LoginFeature.FeatureTearDown();
+                NewTransactionFeature.FeatureTearDown();
             }
         }
     }
