@@ -12,22 +12,16 @@ namespace ElementsNextGen.StepDefinitions
         private loginStepDefinitions(loginPageDefinitions loginPageDefinitions) => _loginPageDefinitions = loginPageDefinitions;
 
         [Then(@"Lets wait for (.*) seconds")]
-        public void ThenLetsWaitForSeconds(int p0)
-        {
-            Task.Delay(p0 * 1000).Wait();
-        }
+        public void ThenLetsWaitForSeconds(int p0) => Task.Delay(p0 * 1000).Wait();
+
 
         [Given(@"I am Logged in to TMS")]
-        public void GivenIAmLoggedInToTMS()
-        {
-            _loginPageDefinitions?.login();
+        public void GivenIAmLoggedInToTMS() => _loginPageDefinitions?.login();
 
-        }
+
 
         [When(@"I Select Application (.*) from App switch Over")]
-        public void WhenISelectApplicationRAMXFromAppSwitchOver(string app)
-        {
-            _loginPageDefinitions?.NavigateToDesiredAppSwitch(app);
-        }
+        public void WhenISelectApplicationRAMXFromAppSwitchOver(string app) => _loginPageDefinitions?.NavigateToDesiredAppSwitch(app);
+
     }
 }
