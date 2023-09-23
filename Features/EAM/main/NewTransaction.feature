@@ -1,6 +1,6 @@
 ﻿Feature: NewTransaction
 
-A short summary of the feature
+Create a New 61 Transaction
 
 @NewTransaction_1
 Scenario: Create_a_New_Transaction
