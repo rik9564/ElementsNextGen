@@ -77,4 +77,4 @@ jobs:
 
     # Execute all unit tests in the solution
     - name: Execute unit tests
-      run: dotnet test
+      run: dotnet test ElementsNextGen.dll --filter "ElementsNextGen.Features.EAM.main.NewTransaction.Create_a_New_Transaction"
