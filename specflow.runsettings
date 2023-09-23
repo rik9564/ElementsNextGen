@@ -2,7 +2,7 @@
 <RunSettings>
 	<TestRunParameters>
 		<!--<Parameter name="url" value="https://tms.az-tms-app-12.tzhealthcare.com/tms/" />-->
-		<Parameter name="baseUrl" value="https://tms.az-tms-app-95.tzhealthcare.com/tms/" />
+		<Parameter name="baseUrl" value="https://tms.az-tms-app-q1.tzhealthcare.com/tms/" />
 		<!--<Parameter name="url" value="https://tms.asp-tms-app-q.dev.trizetto.com/tms/" />-->
 		<Parameter name="username" value="tmsadmin" />
 		<Parameter name="password" value="Welcome@123" />

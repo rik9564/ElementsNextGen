@@ -18,8 +18,8 @@ namespace ElementsNextGen.StepDefinitions
 
         }
 
-        [When(@"I Select \[(.*)] from App switch Over")]
-        public void WhenISelectFromAppSwitchOver(string app)
+        [When(@"I Select Application (.*) from App switch Over")]
+        public void WhenISelectApplicationRAMXFromAppSwitchOver(string app)
         {
             _loginPageDefinitions?.NavigateToDesiredAppSwitch(app);
         }
