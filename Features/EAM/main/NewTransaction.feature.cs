@@ -40,7 +40,7 @@ namespace ElementsNextGen.Features.EAM.Main
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/EAM/Main", "NewTransaction", "A short summary of the feature", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features/EAM/Main", "NewTransaction", "Create a New 61 Transaction", ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -108,6 +108,9 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
 #line 9
  testRunner.When("I Navigated to EAM Main New Transaction -> New Transaction Menu", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 10
+ testRunner.When("I Select Transaction Code -> New Transaction Page -> 61 as -> 61", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -18,5 +18,10 @@ namespace ElementsNextGen.Support
         {
             driver.FindElement(by).Click();
         }
+        public static void Select(this By by, IWebDriver driver, string val)
+        {
+            driver.FindElement(by).Click();
+            By.XPath($"//li[.='{val}']").Click(driver);
+        }
     }
 }

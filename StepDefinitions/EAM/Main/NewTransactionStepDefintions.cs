@@ -21,6 +21,12 @@ namespace ElementsNextGen.StepDefinitions.EAM.Main
         {
             _newTransactionPageDefintions?.navigateMainAndSubMenu(subMenu);
         }
+        [When(@"I Select Transaction Code -> New Transaction Page -> 61 as -> (.*)")]
+        public void WhenISelectTransactionCode_NewTransactionPage_As_(string code)
+        {
+            _newTransactionPageDefintions?.selectTransactionCode(code);
+        }
+
 
     }
 }

@@ -13,6 +13,7 @@ namespace ElementsNextGen.PageDefinitions.EAM.Main
 
         //Write the Locators Here.......
         By Main => By.CssSelector("[test-id='menu-51']");
+        By drpTransactionCode => By.CssSelector("[test-id='transaction-select-code'] button");
 
 
         //Write the Methods Here.......
@@ -20,7 +21,11 @@ namespace ElementsNextGen.PageDefinitions.EAM.Main
         {
             Main.Click(Driver);
             By MainMenuSubMenu = By.XPath($"//span[contains(.,'{subMenu}')]");
-            MainMenuSubMenu.Click(Driver) ;
+            MainMenuSubMenu.Click(Driver);
+        }
+        internal void selectTransactionCode(string Code)
+        {
+            drpTransactionCode.Select(Driver, Code);
         }
 
     }
