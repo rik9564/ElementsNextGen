@@ -34,7 +34,6 @@ namespace ElementsNextGen.PageDefinitions
             AppSwitchDashboard.Click(Driver);
 #pragma warning restore CS8604 // Possible null reference argument.
             By.XPath($"(//small[.='{app}']//..//..)[1]").Click(Driver);
-            Task.Delay(10000).Wait();
 
         }
     }

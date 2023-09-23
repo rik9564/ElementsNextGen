@@ -14,6 +14,7 @@ namespace ElementsNextGen.PageDefinitions.EAM.Main
         //Write the Locators Here.......
         By Main => By.CssSelector("[test-id='menu-51']");
         By drpTransactionCode => By.CssSelector("[test-id='transaction-select-code'] button");
+        By drpTypeOfApplication => By.CssSelector("[test-id='transaction-select-typeOfApplication'] button");
 
 
         //Write the Methods Here.......
@@ -26,6 +27,10 @@ namespace ElementsNextGen.PageDefinitions.EAM.Main
         internal void selectTransactionCode(string Code)
         {
             drpTransactionCode.Select(Driver, Code);
+        }
+        internal void selectTypeOfApplication(string type)
+        {
+            drpTypeOfApplication.Select(Driver, type);
         }
 
     }

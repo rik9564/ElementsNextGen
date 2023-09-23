@@ -112,6 +112,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  testRunner.When("I Select Transaction Code -> New Transaction Page -> 61 as -> 61", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+#line 11
+ testRunner.When("I Select Transaction Code -> New Transaction Page -> Type of Application as -> Pa" +
+                        "per Enrollment", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+ testRunner.Then("Lets wait for 10 seconds", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
             }
             this.ScenarioCleanup();
         }
