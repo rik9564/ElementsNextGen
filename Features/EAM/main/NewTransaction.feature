@@ -9,4 +9,4 @@ Scenario: Create_a_New_Transaction
 	When I Navigated to EAM Main New Transaction -> New Transaction Menu
 	When I Select Transaction Code -> New Transaction Page -> 61 as -> 61
 	When I Select Transaction Code -> New Transaction Page -> Type of Application as -> Paper Enrollment
-	Then Lets wait for 10 seconds
+	Then Lets wait for 15 seconds
