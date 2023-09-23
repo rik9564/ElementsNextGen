@@ -1,0 +1,27 @@
+using ElementsNextGen.Drivers.ConfigSettings;
+using ElementsNextGen.Drivers.Intitializer;
+using ElementsNextGen.PageDefinitions;
+using OpenQA.Selenium;
+
+namespace ElementsNextGen.StepDefinitions
+{
+    [Binding]
+    public sealed class loginStepDefinitions
+    {
+        private loginPageDefinitions? _loginPageDefinitions { get; }
+        private loginStepDefinitions(loginPageDefinitions loginPageDefinitions) => _loginPageDefinitions = loginPageDefinitions;
+
+        [Given(@"I am Logged in to TMS")]
+        public void GivenIAmLoggedInToTMS()
+        {
+            _loginPageDefinitions?.login();
+
+        }
+
+        [When(@"I Select \[(.*)] from App switch Over")]
+        public void WhenISelectFromAppSwitchOver(string app)
+        {
+            _loginPageDefinitions?.NavigateToDesiredAppSwitch(app);
+        }
+    }
+}

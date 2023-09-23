@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RunSettings>
+	<TestRunParameters>
+		<!--<Parameter name="url" value="https://tms.az-tms-app-12.tzhealthcare.com/tms/" />-->
+		<Parameter name="baseUrl" value="https://tms.az-tms-app-95.tzhealthcare.com/tms/" />
+		<!--<Parameter name="url" value="https://tms.asp-tms-app-q.dev.trizetto.com/tms/" />-->
+		<Parameter name="username" value="tmsadmin" />
+		<Parameter name="password" value="Welcome@123" />
+		<Parameter name="authtype" value="idm" />
+		<Parameter name="authuname" value="root.admin" />
+		<!--<Parameter name="authuname" value="dev\rahul.patil" />-->
+		<Parameter name="authpassword" value="Welcome@123" />
+		<Parameter name="browser" value="chrome" />
+		<Parameter name="implicitWait" value="10" />
+		<Parameter name="driverType" value="standalone" />
+		<Parameter name="loadbalancerip" value="20.245.222.180" />
+		<Parameter name="testType" value="SmokeTest" />
+		<Parameter name="isLog" value="Y" />
+		<Parameter name="logPath" value="C:\\ElementsAutoLogs\\" />
+		<Parameter name="tenant" value="TMS" />
+		<Parameter name="exportfileloc" value="elements-cmsfiles-aks-dev" />
+		<Parameter name="sourcefileloc" value="elements-selenium-grid" />
+		<Parameter name="azurefilestorageloc" value="\\t3devtmsmgmsa.file.core.windows.net" />
+		<Parameter name="eamapp" value="EAMAuto" />
+		<Parameter name="frmapp" value="RSMAuto" />
+		<Parameter name="dlmdb" value="DLM" />
+		<Parameter name="cdmdb" value="CDMAuto" />
+		<Parameter name="pdemdb" value="PDEMAuto" />
+		<Parameter name="ramxdb" value="RAMXAuto" />
+		<Parameter name="rsmdb" value="RSMAuto" />
+		<Parameter name="ramdb" value="RAMAuto" />
+		<Parameter name="cmsbeqdb" value="CMSBEQ" />
+		<Parameter name="identityserverdb" value="IdentityServer" />
+		<Parameter name="warehousedb" value="EAMWarehouse" />
+		<Parameter name="pdmmetadatadb" value="PDMMetadata" />
+		<Parameter name="dbserver" value="AZ-TMS-SQL-q1.tzhealthcare.com" />
+		<!--This TMSSharedFolder Location is only Applicable to Automation Servers-->
+		<Parameter name="TMSSharedFolder" value="\\az-tms-app-q1.tzhealthcare.com\C$\TMSSharedFolder" />
+		<Parameter name="dbusername" value="pdmadmin" />
+		<Parameter name="dbpassword" value="pdmrox" />
+		<Parameter name="coretestfolder" value="c:\temp" />
+		<Parameter name="workflow" value="TriZetto456" />
+		<Parameter name="idmURL" value="https://tms.az-tms-app-q1.tzhealthcare.com/idm/" />
+		<Parameter name="workflowApplicationURL" value="EAM" />
+		<Parameter name="workflowAServiceEndpointURL" value="pdmadmin" />
+	</TestRunParameters>
+</RunSettings>
