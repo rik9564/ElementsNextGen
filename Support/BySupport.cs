@@ -5,22 +5,22 @@ namespace ElementsNextGen.Support
 {
     public static class BySupport
     {
-        public static IWebElement get(this By by, IWebDriver driver)
+        public static IWebElement? get(this By by, NgWebDriver? driver)
         {
-            return driver.FindElement(by);
+            return driver?.FindElement(by);
         }
-        public static IWebElement type(this By by, NgWebDriver driver, string val)
+        public static IWebElement? type(this By by, NgWebDriver? driver, string val)
         {
-            driver.FindElement(by).SendKeys(val);
-            return driver.FindElement(by);
+            driver?.FindElement(by).SendKeys(val);
+            return driver?.FindElement(by);
         }
-        public static void Click(this By by, IWebDriver driver)
+        public static void Click(this By by, NgWebDriver? driver)
         {
-            driver.FindElement(by).Click();
+            driver?.FindElement(by).Click();
         }
-        public static void Select(this By by, IWebDriver driver, string val)
+        public static void Select(this By by, NgWebDriver? driver, string val)
         {
-            driver.FindElement(by).Click();
+            driver?.FindElement(by).Click();
             By.XPath($"//li[.='{val}']").Click(driver);
         }
     }

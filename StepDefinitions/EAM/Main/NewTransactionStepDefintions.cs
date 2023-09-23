@@ -22,6 +22,8 @@ namespace ElementsNextGen.StepDefinitions.EAM.Main
         public void WhenISelectTransactionCode_NewTransactionPage_As_(string code) => _newTransactionPageDefintions?.selectTransactionCode(code);
         [When(@"I Select Transaction Code -> New Transaction Page -> Type of Application as -> (.*)")]
         public void WhenISelectTransactionCode_NewTransactionPage_TypeOfApplicationAs_PaperEnrollment(string type) => _newTransactionPageDefintions?.selectTypeOfApplication(type);
+        [When(@"New Transaction -> MBI -> (.*)")]
+        public void WhenNewTransaction_MBI_AMI(string firstName) => _newTransactionPageDefintions?.enterMBI(firstName);
 
 
 

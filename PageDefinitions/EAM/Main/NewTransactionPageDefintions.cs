@@ -15,6 +15,7 @@ namespace ElementsNextGen.PageDefinitions.EAM.Main
         By Main => By.CssSelector("[test-id='menu-51']");
         By drpTransactionCode => By.CssSelector("[test-id='transaction-select-code'] button");
         By drpTypeOfApplication => By.CssSelector("[test-id='transaction-select-typeOfApplication'] button");
+        By txtMBI => By.CssSelector("[test-id='DemographicDetailsMBI']");
 
 
         //Write the Methods Here.......
@@ -31,6 +32,10 @@ namespace ElementsNextGen.PageDefinitions.EAM.Main
         internal void selectTypeOfApplication(string type)
         {
             drpTypeOfApplication.Select(Driver, type);
+        }
+        internal void enterMBI(string type)
+        {
+            txtMBI.type(Driver, type);
         }
 
     }

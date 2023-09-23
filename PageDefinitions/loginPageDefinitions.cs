@@ -30,9 +30,7 @@ namespace ElementsNextGen.PageDefinitions
 
         internal void NavigateToDesiredAppSwitch(string app)
         {
-#pragma warning disable CS8604 // Possible null reference argument.
             AppSwitchDashboard.Click(Driver);
-#pragma warning restore CS8604 // Possible null reference argument.
             By.XPath($"(//small[.='{app}']//..//..)[1]").Click(Driver);
 
         }
