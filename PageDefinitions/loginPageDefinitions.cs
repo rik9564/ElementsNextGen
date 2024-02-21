@@ -26,7 +26,6 @@ namespace ElementsNextGen.PageDefinitions
             txtUserName.type(Driver, Settings.Username);
             txtPassword.type(Driver, Settings.Password);
             btnlogin.Click(Driver);
-            Thread.Sleep(2);
         }
 
         internal void NavigateToDesiredAppSwitch(string app)
